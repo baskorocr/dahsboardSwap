@@ -13,10 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('index');
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('index')->middleware("guest");
 
 Route::middleware(['auth'])->prefix('admin')->group(function () {
-    Route::get('/dashboard', [\App\Http\Controllers\index::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [\App\Http\Controllers\dashboard::class, 'index'])->name('dashboard');
+    Route::get('/status', [\App\Http\Controllers\dashboard::class, 'status'])->name('status');
 });
 
 

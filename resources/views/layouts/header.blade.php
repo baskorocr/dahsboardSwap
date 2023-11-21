@@ -25,16 +25,16 @@
         </li>
        
       </ul>
-      @if (Auth::check())
+    @if (Auth::check())
     <!-- User is authenticated (logged in) -->
     <form action="{{ route('logout') }}" method="post">
         @csrf
         <button type="submit" class="btn btn-danger">Logout</button>
     </form>
-@else
+    @else
     <!-- User is not authenticated (guest) -->
     <a class="btn btn-primary" href="{{ route('login') }}">Login</a>
-@endif
+    @endif
     </div>
   </div>
 </nav>

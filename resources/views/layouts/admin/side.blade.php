@@ -65,22 +65,11 @@
             <ul id="sidebarnav">
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('dashboard') }}"
                         aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
-                            class="hide-menu">Dashboard</span></a></li>
+                            class="hide-menu">Status Battery</span></a></li>
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="pages-profile.html" aria-expanded="false"><i class="mdi mdi-account-network"></i><span
-                            class="hide-menu">Profile</span></a></li>
-                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="table-basic.html" aria-expanded="false"><i class="mdi mdi-border-all"></i><span
-                            class="hide-menu">Table</span></a></li>
-                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="icon-material.html" aria-expanded="false"><i class="mdi mdi-face"></i><span
-                            class="hide-menu">Icon</span></a></li>
-                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="starter-kit.html" aria-expanded="false"><i class="mdi mdi-file"></i><span
-                            class="hide-menu">Blank</span></a></li>
-                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="error-404.html" aria-expanded="false"><i class="mdi mdi-alert-outline"></i><span
-                            class="hide-menu">404</span></a></li>
+                        href="{{ route('status') }}" aria-expanded="false"><i class="mdi mdi-dna"></i><span
+                            class="hide-menu">Status Machine</span></a></li>
+               
                 <li class="text-center p-40 upgrade-btn">
                      <a href="{{ route('logout') }}" class="btn btn-danger" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

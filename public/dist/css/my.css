@@ -153,10 +153,10 @@ a {
 .battery {
     position: relative;
     background-image: url("/assets/images/batteryS.png");
-    background-size: 180px;
+    background-size: 175px;
     background-repeat: no-repeat;
-    width: 180px;
-    height: 180px;
+    width: 175px;
+    height: 175px;
     margin: auto;
     display: flex;
     align-items: center;
