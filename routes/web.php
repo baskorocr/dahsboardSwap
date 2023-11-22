@@ -18,6 +18,7 @@ Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('i
 Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::get('/dashboard', [\App\Http\Controllers\dashboard::class, 'index'])->name('dashboard');
     Route::get('/status', [\App\Http\Controllers\dashboard::class, 'status'])->name('status');
+    Route::get('/map', [\App\Http\Controllers\dashboard::class, 'map'])->name('map');
 });
 
 

@@ -15,4 +15,8 @@ class dashboard extends Controller
     {
         return view('layouts.admin.status');
     }
+    public function map()
+    {
+        return view('layouts.admin.map');
+    }
 }

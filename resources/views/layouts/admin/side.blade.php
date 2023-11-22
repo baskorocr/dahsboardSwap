@@ -69,8 +69,12 @@
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                         href="{{ route('status') }}" aria-expanded="false"><i class="mdi mdi-dna"></i><span
                             class="hide-menu">Status Machine</span></a></li>
+                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                        href="{{ route('map') }}" aria-expanded="false"><i class="mdi mdi-map-marker"></i><span
+                            class="hide-menu">Map Machine</span></a></li>
                
-                <li class="text-center p-40 upgrade-btn">
+               
+                     <li class="text-center p-40 upgrade-btn">
                      <a href="{{ route('logout') }}" class="btn btn-danger" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         {{ csrf_field() }}
