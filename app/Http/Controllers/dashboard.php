@@ -8,15 +8,15 @@ class dashboard extends Controller
 {
     public function index()
     {
-        return view('layouts.admin.dashboard');
+        return view('admin.dashboard');
     }
 
     public function status()
     {
-        return view('layouts.admin.status');
+        return view('admin.status');
     }
     public function map()
     {
-        return view('layouts.admin.map');
+        return view('admin.map');
     }
 }
